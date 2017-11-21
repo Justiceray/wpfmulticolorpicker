@@ -53,6 +53,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\ViewModelBase.cs" />
+    <Compile Include="Controls\ColorPickerCanvas\ColorPickerCanvas.cs" />
     <Compile Include="Controls\MultiColorPickerControl\MultiColorPickerControl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
