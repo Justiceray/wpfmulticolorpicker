@@ -12,7 +12,7 @@ namespace MultiColorPicker.Controls.ColorPickerCanvas.ViewModel
         #region Properties & Fields
 
         private int m_Red;
-         
+
         /// <summary>
         /// RGB中的R值
         /// </summary>
@@ -135,6 +135,16 @@ namespace MultiColorPicker.Controls.ColorPickerCanvas.ViewModel
         }
         #endregion
 
+        #region Constructor
+        
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        public ColorPickerCanvasViewModel()
+        {
 
+        }
+
+        #endregion
     }
 }

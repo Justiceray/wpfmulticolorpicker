@@ -22,8 +22,7 @@ namespace MultiColorPicker.Controls.MultiColorPickerControl
     {
 
         #region Fields & Properties
-
-        private ColorPicker
+        
 
         #endregion
         static MultiColorPickerControl()
