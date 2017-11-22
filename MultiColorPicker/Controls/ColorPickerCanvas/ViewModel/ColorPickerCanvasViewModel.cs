@@ -132,11 +132,16 @@ namespace MultiColorPicker.Controls.ColorPickerCanvas.ViewModel
             {
                 return m_Hue;
             }
+            set
+            {
+                m_Hue = value;
+                OnPropertyChanged(() => Hue);
+            }
         }
         #endregion
 
         #region Constructor
-        
+
         /// <summary>
         /// Constructor
         /// </summary>
