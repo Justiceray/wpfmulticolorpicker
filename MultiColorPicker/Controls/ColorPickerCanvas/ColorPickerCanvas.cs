@@ -21,52 +21,7 @@ namespace MultiColorPicker.Controls.ColorPickerCanvas
     /// </summary>
     public class ColorPickerCanvas : Control
     {
-        #region Properties & Fields
-
-        private int m_Red;
-
-        public int Red
-        {
-            get
-            {
-                return m_Red;
-            }
-            set
-            {
-                m_Red = value;
-            }
-        }
-
-        private int m_Green;
-
-        public int Green
-        {
-            get
-            {
-                return m_Green;
-            }
-            set
-            {
-                m_Green = value;
-            }
-        }
-
-        private int m_Blue;
-
-        public int Blue
-        {
-            get
-            {
-                return m_Blue;
-            }
-            set
-            {
-                m_Blue = value;
-            }
-        }
-
-        #endregion
-
+      
         static ColorPickerCanvas()
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(ColorPickerCanvas), new FrameworkPropertyMetadata(typeof(ColorPickerCanvas)));
