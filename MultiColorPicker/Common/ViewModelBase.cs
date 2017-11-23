@@ -5,13 +5,14 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace MultiColorPicker.Common
 {
     /// <summary>
     /// ViewModelBase
     /// </summary>
-    public class ViewModelBase : INotifyPropertyChanged
+    public class ViewModelBase : DependencyObject, INotifyPropertyChanged
     {
         #region Private Methods
 

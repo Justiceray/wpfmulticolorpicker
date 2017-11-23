@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MultiColorPicker.Common;
+using System.Windows.Media;
+using System.Windows;
 
 namespace MultiColorPicker.Controls.ColorPickerCanvas.ViewModel
 {
@@ -138,6 +140,22 @@ namespace MultiColorPicker.Controls.ColorPickerCanvas.ViewModel
                 OnPropertyChanged(() => Hue);
             }
         }
+
+
+        /// <summary>
+        /// 当前选中颜色的依赖项属性。
+        /// </summary>
+        public Color SelectedColor
+        {
+            get { return (Color)GetValue(SelectedColorProperty); }
+            set { SetValue(SelectedColorProperty, value); }
+        }
+
+        public static readonly DependencyProperty SelectedColorProperty =
+            DependencyProperty.Register("SelectedColor", typeof(Color), typeof(ColorPickerCanvasViewModel), new PropertyMetadata(null));
+
+
+
         #endregion
 
         #region Constructor
