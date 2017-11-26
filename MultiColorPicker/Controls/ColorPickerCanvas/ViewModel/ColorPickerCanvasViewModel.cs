@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 using MultiColorPicker.Common;
 using System.Windows.Media;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace MultiColorPicker.Controls.ColorPickerCanvas.ViewModel
 {
+
     public class ColorPickerCanvasViewModel : ViewModelBase
     {
+       
+
         #region Properties & Fields
 
         private byte m_Red;
