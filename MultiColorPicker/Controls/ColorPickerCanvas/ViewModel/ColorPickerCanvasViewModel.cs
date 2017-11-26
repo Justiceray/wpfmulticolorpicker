@@ -13,12 +13,12 @@ namespace MultiColorPicker.Controls.ColorPickerCanvas.ViewModel
     {
         #region Properties & Fields
 
-        private int m_Red;
+        private byte m_Red;
 
         /// <summary>
         /// RGB中的R值
         /// </summary>
-        public int Red
+        public byte Red
         {
             get
             {
@@ -31,12 +31,12 @@ namespace MultiColorPicker.Controls.ColorPickerCanvas.ViewModel
             }
         }
 
-        private int m_Green;
+        private byte m_Green;
 
         /// <summary>
         /// RGB中的G值
         /// </summary>
-        public int Green
+        public byte Green
         {
             get
             {
@@ -49,12 +49,12 @@ namespace MultiColorPicker.Controls.ColorPickerCanvas.ViewModel
             }
         }
 
-        private int m_Blue;
+        private byte m_Blue;
 
         /// <summary>
         /// RGB中的B值
         /// </summary>
-        public int Blue
+        public byte Blue
         {
             get
             {
@@ -67,12 +67,12 @@ namespace MultiColorPicker.Controls.ColorPickerCanvas.ViewModel
             }
         }
 
-        public int m_AlphaChannel;
+        public byte m_AlphaChannel;
 
         /// <summary>
         /// Alpha通道
         /// </summary>
-        public int AlphaChannel
+        public byte AlphaChannel
         {
             get
             {
