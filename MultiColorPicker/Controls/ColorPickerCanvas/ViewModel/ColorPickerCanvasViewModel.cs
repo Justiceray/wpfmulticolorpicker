@@ -7,13 +7,14 @@ using MultiColorPicker.Common;
 using System.Windows.Media;
 using System.Windows;
 using System.Windows.Controls;
+using Prism.Mvvm;
 
 namespace MultiColorPicker.Controls.ColorPickerCanvas.ViewModel
 {
 
-    public class ColorPickerCanvasViewModel : ViewModelBase
+    public class ColorPickerCanvasViewModel : BindableBase
     {
-       
+
 
         #region Properties & Fields
 
@@ -31,7 +32,7 @@ namespace MultiColorPicker.Controls.ColorPickerCanvas.ViewModel
             set
             {
                 m_Red = value;
-                OnPropertyChanged(() => Red);
+                SetProperty(ref m_Red, value);
             }
         }
 
@@ -49,7 +50,7 @@ namespace MultiColorPicker.Controls.ColorPickerCanvas.ViewModel
             set
             {
                 m_Green = value;
-                OnPropertyChanged(() => Green);
+                SetProperty(ref m_Green, value);
             }
         }
 
@@ -67,7 +68,7 @@ namespace MultiColorPicker.Controls.ColorPickerCanvas.ViewModel
             set
             {
                 m_Blue = value;
-                OnPropertyChanged(() => Blue);
+                SetProperty(ref m_Blue, value);
             }
         }
 
@@ -85,7 +86,7 @@ namespace MultiColorPicker.Controls.ColorPickerCanvas.ViewModel
             set
             {
                 m_AlphaChannel = value;
-                OnPropertyChanged(() => AlphaChannel);
+                SetProperty(ref m_AlphaChannel, value);
             }
         }
 
@@ -103,7 +104,7 @@ namespace MultiColorPicker.Controls.ColorPickerCanvas.ViewModel
             set
             {
                 m_Saturation = value;
-                OnPropertyChanged(() => Saturation);
+                SetProperty(ref m_Saturation, value);
             }
         }
 
@@ -122,7 +123,7 @@ namespace MultiColorPicker.Controls.ColorPickerCanvas.ViewModel
             set
             {
                 m_Luminance = value;
-                OnPropertyChanged(() => Luminance);
+                SetProperty(ref m_Luminance, value);
             }
         }
 
@@ -141,24 +142,9 @@ namespace MultiColorPicker.Controls.ColorPickerCanvas.ViewModel
             set
             {
                 m_Hue = value;
-                OnPropertyChanged(() => Hue);
+                SetProperty(ref m_Hue, value);
             }
         }
-
-
-        /// <summary>
-        /// 当前选中颜色的依赖项属性。
-        /// </summary>
-        public Color SelectedColor
-        {
-            get { return (Color)GetValue(SelectedColorProperty); }
-            set { SetValue(SelectedColorProperty, value); }
-        }
-
-        public static readonly DependencyProperty SelectedColorProperty =
-            DependencyProperty.Register("SelectedColor", typeof(Color), typeof(ColorPickerCanvasViewModel), new PropertyMetadata(null));
-
-
 
         #endregion
 
