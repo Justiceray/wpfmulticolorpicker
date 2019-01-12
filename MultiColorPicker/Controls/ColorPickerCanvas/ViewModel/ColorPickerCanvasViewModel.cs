@@ -97,6 +97,7 @@ namespace MultiColorPicker.Controls.ColorPickerCanvas.ViewModel
         /// </summary>
         public int Saturation
         {
+
             get
             {
                 return m_Saturation;
