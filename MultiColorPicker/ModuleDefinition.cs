@@ -15,6 +15,7 @@ namespace MultiColorPicker
         {
             var region = containerProvider.Resolve<IRegionManager>();
             region.RegisterViewWithRegion("ContentRegion", typeof(MulitColorPickerView));
+            string test = "114514";
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
