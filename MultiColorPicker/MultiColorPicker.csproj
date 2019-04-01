@@ -71,6 +71,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BranchTest.cs" />
     <Compile Include="Common\ColorUtilites.cs" />
     <Compile Include="Common\ViewModelBase.cs" />
     <Compile Include="Controls\ColorPickerCanvas\ColorPickerCanvas.cs" />
